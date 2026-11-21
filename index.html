@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>보험점검 서비스 | 최문규 설계사 무료 보장분석 상담</title>
-<meta name="description" content="가입보다 중요한 건 제대로 보장받는 것. 지금 가진 보험을 정확히 점검하고, 불필요한 보험은 정리하고 꼭 필요한 보장만 남깁니다. 최문규 설계사 무료 상담 010-9071-6822">
-<meta name="keywords" content="보험점검, 보험점검 서비스, 보장분석, 무료 보험상담, 보험 리모델링, 실손보험, 암보험, 보험금 청구, 최문규 설계사">
+<title>보험점검 서비스 | 최문규 플래너 무료 보장분석 상담</title>
+<meta name="description" content="가입보다 중요한 건 제대로 보장받는 것. 지금 가진 보험을 정확히 점검하고, 불필요한 보험은 정리하고 꼭 필요한 보장만 남깁니다. 최문규 플래너 무료 상담 010-9071-6822">
+<meta name="keywords" content="보험점검, 보험점검 서비스, 보장분석, 무료 보험상담, 보험 리모델링, 실손보험, 암보험, 보험금 청구, 최문규 플래너">
 <meta property="og:type" content="website">
 <meta property="og:title" content="보험점검 서비스 | 가입보다 중요한 건, 제대로 보장받는 것">
-<meta property="og:description" content="무료 보장분석 · 강요 없는 상담 · 보험금 청구까지. 최문규 설계사 010-9071-6822">
+<meta property="og:description" content="무료 보장분석 · 강요 없는 상담 · 보험금 청구까지. 최문규 플래너 010-9071-6822">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
@@ -93,6 +93,34 @@ footer .wrap{padding-top:40px;padding-bottom:40px;display:flex;flex-direction:co
 footer b{color:#fff;font-size:15px}
 footer a{color:#A9B4C4}
 .mbar{display:none}
+.cases{background:#fff}
+.cases .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px}
+.cases .nav{display:flex;gap:8px}
+.cases .nav button{width:48px;height:48px;padding:0;border-radius:50%;background:#fff;color:#0F2340;border:1px solid #CBD2DC;display:flex;align-items:center;justify-content:center}
+.cases .nav button:hover{background:#0F2340;color:#fff}
+.viewport{overflow:hidden;margin-top:40px;touch-action:pan-y}
+.track{display:flex;gap:24px;transition:transform .6s ease;will-change:transform}
+.slide{flex:0 0 calc((100% - 48px)/3);min-width:0;border:1px solid #E5E7EB;border-top:3px solid #0F2340;background:#fff;display:flex;flex-direction:column}
+.slide a.shot{display:block;height:460px;overflow:hidden;background:#F5F3EE;border-bottom:1px solid #E5E7EB}
+.slide img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.slide .cap{padding:20px 22px;display:flex;flex-direction:column;gap:6px}
+.slide .co{font-size:13px;font-weight:700;color:#8C6D3F}
+.slide .amt{font-size:24px;font-weight:700;color:#0F2340}
+.slide .txt{font-size:14px;line-height:1.6;color:#4B5563}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:28px}
+.dots button{width:10px;height:10px;padding:0;border-radius:999px;background:#CBD2DC;border:none;transition:width .3s}
+.dots button[aria-current="true"]{width:28px;background:#0F2340}
+.cases .fine{margin:18px 0 0;font-size:13px;color:#6B7280;text-align:center}
+@media (max-width:900px){.slide{flex-basis:calc((100% - 24px)/2)}}
+@media (max-width:600px){
+.viewport{margin-top:24px;margin-right:-20px}
+.track{gap:14px}
+.slide{flex-basis:84%}
+.slide a.shot{height:400px}
+.slide .amt{font-size:21px}
+.cases .nav button{width:44px;height:44px}
+}
+
 @media (max-width:900px){
 .svc{grid-template-columns:repeat(2,minmax(0,1fr))}
 .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -139,7 +167,7 @@ footer .wrap{padding-bottom:100px;font-size:12px}
 </head>
 <body>
 
-<div class="topbar"><div class="wrap"><span>보험설계사 최문규 · 무료 보장분석 상담</span><a href="tel:01090716822">상담 문의 010-9071-6822</a></div></div>
+<div class="topbar"><div class="wrap"><span>보험 플래너 최문규 · 무료 보장분석 상담</span><a href="tel:01090716822">상담 문의 010-9071-6822</a></div></div>
 
 <header><div class="wrap">
 <a class="logo" href="#top" aria-label="보험점검 서비스 홈">
@@ -170,11 +198,19 @@ footer .wrap{padding-bottom:100px;font-size:12px}
 
 <div class="band"><div class="wrap">
 <div><b class="serif">0원</b><span>상담 · 점검 비용</span></div>
-<div><b class="serif">1:1</b><span>전담 설계사 상담</span></div>
+<div><b class="serif">1:1</b><span>전담 플래너 상담</span></div>
 <div><b class="serif">비교</b><span>여러 보험사 조건 비교</span></div>
 <div><b class="serif">끝까지</b><span>보험금 청구 지원</span></div>
 </div></div>
 
+
+<section class="blk cases" id="cases" aria-roledescription="캐러셀" aria-label="보험금 지급 사례"><div class="wrap">
+<div class="head"><div style="display:flex;flex-direction:column;gap:12px"><span class="eyebrow">REAL CASES</span><h2 class="h2 serif">실제 보험금 지급 사례</h2><p class="sub">받아야 할 보험금, 끝까지 챙겨드렸습니다</p></div>
+<div class="nav"><button type="button" id="prev" aria-label="이전 사례"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg></button><button type="button" id="next" aria-label="다음 사례"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg></button></div></div>
+<div class="viewport" id="vp"><div class="track" id="track"><div class="slide" role="group" aria-roledescription="슬라이드" aria-label="1 / 4"><a class="shot" href="/images/case1.jpg" target="_blank" rel="noopener"><img src="/images/case1.jpg" alt="한화손해보험 보험금 지급 안내 화면 (개인정보 가림)" loading="lazy"></a><div class="cap"><span class="co">한화손해보험</span><span class="amt serif">32,873,172원 지급</span><span class="txt">심사 완료 후 보상 제외 사유 없이 전액 지급되었습니다.</span></div></div><div class="slide" role="group" aria-roledescription="슬라이드" aria-label="2 / 4"><a class="shot" href="/images/case3.jpg" target="_blank" rel="noopener"><img src="/images/case3.jpg" alt="신한라이프 보험금 지급 안내 화면 (개인정보 가림)" loading="lazy"></a><div class="cap"><span class="co">신한라이프</span><span class="amt serif">2,046,000원 지급</span><span class="txt">청구가 미뤄지던 입원·수술 보험금, 누락 없이 받아드렸습니다.</span></div></div><div class="slide" role="group" aria-roledescription="슬라이드" aria-label="3 / 4"><a class="shot" href="/images/case2.jpg" target="_blank" rel="noopener"><img src="/images/case2.jpg" alt="한화손해보험 보험금 지급 안내 화면 (개인정보 가림)" loading="lazy"></a><div class="cap"><span class="co">한화손해보험</span><span class="amt serif">7,854,157원 지급</span><span class="txt">진단서와 서류를 꼼꼼히 챙겨 청구를 도와드렸습니다.</span></div></div><div class="slide" role="group" aria-roledescription="슬라이드" aria-label="4 / 4"><a class="shot" href="/images/case4.jpg" target="_blank" rel="noopener"><img src="/images/case4.jpg" alt="KB손해보험 보험금 지급 안내 화면 (개인정보 가림)" loading="lazy"></a><div class="cap"><span class="co">KB손해보험</span><span class="amt serif">1,501,290원 지급</span><span class="txt">갱신형 수술비 특약 3건을 빠짐없이 청구했습니다.</span></div></div></div></div>
+<div class="dots" id="dots"></div>
+<p class="fine">고객 개인정보와 계좌·질병 정보는 가림 처리했습니다. 이미지를 누르면 크게 볼 수 있어요.</p>
+</div></section>
 <section class="blk" id="services"><div class="wrap">
 <div class="center"><span class="eyebrow">SERVICES</span><h2 class="h2 serif">상담 분야</h2><p class="sub">생애 단계별로 꼭 필요한 보장을 함께 설계합니다</p></div>
 <div class="svc">
@@ -192,7 +228,7 @@ footer .wrap{padding-bottom:100px;font-size:12px}
 <div class="pr-r">
 <div><em class="serif">01</em><div><h3>강요 없는 상담</h3><p>점검 결과만 설명드리고, 결정은 충분히 고민하신 뒤 고객님이 내리십니다.</p></div></div>
 <div><em class="serif">02</em><div><h3>여러 보험사 비교</h3><p>한 회사 상품만 권하지 않습니다. 같은 보장을 더 합리적인 조건으로 비교해 드립니다.</p></div></div>
-<div><em class="serif">03</em><div><h3>가입 후에도 끝까지</h3><p>보험금 청구, 정기 점검까지 최문규 설계사가 직접 책임지고 관리합니다.</p></div></div>
+<div><em class="serif">03</em><div><h3>가입 후에도 끝까지</h3><p>보험금 청구, 정기 점검까지 최문규 플래너가 직접 책임지고 관리합니다.</p></div></div>
 </div>
 </div></section>
 
@@ -209,9 +245,9 @@ footer .wrap{padding-bottom:100px;font-size:12px}
 <section class="blk contact" id="contact"><div class="wrap">
 <div class="ct-l">
 <h2 class="h2 serif" style="color:#fff">무료 보험점검<br>신청하기</h2>
-<p>신청서를 보내주시면 최문규 설계사가 직접 연락드립니다. 상담 후 가입 권유는 하지 않습니다.</p>
+<p>신청서를 보내주시면 최문규 플래너가 직접 연락드립니다. 상담 후 가입 권유는 하지 않습니다.</p>
 <a class="tel serif" href="tel:01090716822">010-9071-6822</a>
-<span class="who">보험설계사 최문규</span>
+<span class="who">보험 플래너 최문규</span>
 </div>
 <form id="f" novalidate>
 <div class="fld"><label for="n">이름</label><input id="n" type="text" placeholder="홍길동" autocomplete="name"></div>
@@ -221,14 +257,14 @@ footer .wrap{padding-bottom:100px;font-size:12px}
 <label class="agree"><input id="a" type="checkbox">개인정보(이름·연락처) 수집 및 상담 목적 이용에 동의합니다 (필수)</label>
 <p class="err" id="e" role="alert"></p>
 <button type="submit">상담 신청하기</button>
-<p class="hint">버튼을 누르면 문자 앱이 열리고 신청 내용이 최문규 설계사에게 전달됩니다</p>
+<p class="hint">버튼을 누르면 문자 앱이 열리고 신청 내용이 최문규 플래너에게 전달됩니다</p>
 </form>
 </div></section>
 </main>
 
 <footer><div class="wrap">
 <b class="serif">보험점검 서비스</b>
-<span>보험설계사 최문규 · 상담 문의 <a href="tel:01090716822">010-9071-6822</a></span>
+<span>보험 플래너 최문규 · 상담 문의 <a href="tel:01090716822">010-9071-6822</a></span>
 <span>기존 보험계약을 해지하고 새로운 보험계약을 체결하는 과정에서 보험인수 거절, 보험료 인상, 보장내용 변경 등 불이익이 발생할 수 있습니다.</span>
 </div></footer>
 
@@ -250,6 +286,26 @@ document.getElementById('f').addEventListener('submit',function(ev){
   var sep=/iPhone|iPad|iPod/i.test(navigator.userAgent)?'&':'?';
   location.href='sms:01090716822'+sep+'body='+encodeURIComponent(body);
 });
+</script>
+
+<script>
+(function(){
+  var vp=document.getElementById('vp'),tr=document.getElementById('track'),sl=tr.children,dots=document.getElementById('dots'),i=0,timer,startX=null;
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function per(){var w=window.innerWidth;return w<=600?1:w<=900?2:3}
+  function max(){return Math.max(0,sl.length-per())}
+  function build(){dots.innerHTML='';for(var k=0;k<=max();k++){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label',(k+1)+'번째 사례 보기');(function(k){b.onclick=function(){go(k);restart()}})(k);dots.appendChild(b)}}
+  function go(n){var m=max();i=n>m?0:(n<0?m:n);var step=sl[0].getBoundingClientRect().width+parseFloat(getComputedStyle(tr).columnGap||getComputedStyle(tr).gap||0);tr.style.transform='translateX('+(-i*step)+'px)';for(var k=0;k<dots.children.length;k++)dots.children[k].setAttribute('aria-current',k===i?'true':'false')}
+  function restart(){clearInterval(timer);if(!reduce)timer=setInterval(function(){go(i+1)},3500)}
+  document.getElementById('next').onclick=function(){go(i+1);restart()};
+  document.getElementById('prev').onclick=function(){go(i-1);restart()};
+  vp.addEventListener('mouseenter',function(){clearInterval(timer)});
+  vp.addEventListener('mouseleave',restart);
+  vp.addEventListener('touchstart',function(e){startX=e.touches[0].clientX;clearInterval(timer)},{passive:true});
+  vp.addEventListener('touchend',function(e){if(startX===null)return;var dx=e.changedTouches[0].clientX-startX;if(Math.abs(dx)>40)go(dx<0?i+1:i-1);startX=null;restart()});
+  window.addEventListener('resize',function(){build();go(Math.min(i,max()))});
+  build();go(0);restart();
+})();
 </script>
 </body>
 </html>
