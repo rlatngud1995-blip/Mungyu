@@ -15,7 +15,7 @@
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:'Noto Sans KR','Noto Sans CJK KR',sans-serif;color:#1F2937;background:#fff;-webkit-font-smoothing:antialiased}
+body{margin:0;font-family:'Noto Sans KR','Noto Sans CJK KR',sans-serif;color:#1F2937;background:#fff;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
 .serif{font-family:'Noto Serif KR','Noto Serif CJK KR',serif}
 a{color:#0F2340}
 .wrap{max-width:1200px;margin:0 auto;padding:0 40px}
@@ -39,6 +39,7 @@ h1{margin:0;font-size:52px;line-height:1.3;font-weight:700;letter-spacing:-1px}
 .cta{display:flex;flex-wrap:wrap;gap:12px;padding-top:8px}
 .btn{display:inline-block;padding:16px 28px;font-size:16px;text-decoration:none;border-radius:4px;text-align:center}
 .btn-gold{background:#C9A86A;color:#0F2340;font-weight:700}
+.btn-kakao{background:#FEE500;color:#191919;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:8px}
 .btn-line{border:1px solid #8A9BB5;color:#fff;font-weight:500}
 .worry{flex:1 1 380px;min-width:0;background:#fff;color:#1F2937;border-radius:6px;padding:36px;display:flex;flex-direction:column;gap:20px;box-shadow:0 20px 40px rgba(0,0,0,.25)}
 .worry h2{margin:0;font-size:22px;color:#0F2340}
@@ -160,7 +161,8 @@ form{padding:24px 20px;gap:14px}
 footer .wrap{padding-bottom:100px;font-size:12px}
 .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid #E5E7EB;padding:10px 12px;gap:8px}
 .mbar a{display:flex;align-items:center;justify-content:center;gap:6px;padding:14px;border-radius:4px;text-decoration:none;font-weight:700;font-size:15px}
-.mbar .t{flex:1;border:1px solid #0F2340;color:#0F2340}
+.mbar .k{flex:1;background:#FEE500;color:#191919}
+.mbar .t{flex:none;width:52px;padding:14px 0;border:1px solid #0F2340;color:#0F2340}
 .mbar .c{flex:1.4;background:#0F2340;color:#fff}
 }
 </style>
@@ -183,7 +185,7 @@ footer .wrap{padding-bottom:100px;font-size:12px}
 <span class="eyebrow">INSURANCE CHECK-UP</span>
 <h1 class="serif">가입보다 중요한 건,<br>제대로 보장받는 것입니다</h1>
 <p class="lead">지금 가진 보험부터 정확히 점검합니다. 불필요한 보험은 정리하고, 꼭 필요한 보장만 남기는 상담을 약속드립니다.</p>
-<div class="cta"><a class="btn btn-gold" href="#contact">무료 보험점검 신청</a><a class="btn btn-line" href="#process">상담 절차 보기</a></div>
+<div class="cta"><a class="btn btn-gold" href="#contact">무료 보험점검 신청</a><a class="btn btn-kakao" href="https://open.kakao.com/o/s4VfvSXi" target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="#191919"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.9 5.3 4.7 6.7l-1 3.7c-.1.4.3.7.6.5l4.4-2.9c.4 0 .9.1 1.3.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>카카오톡 상담</a><a class="btn btn-line" href="#process">상담 절차 보기</a></div>
 </div>
 <div class="worry">
 <h2 class="serif">이런 고민, 있으신가요?</h2>
@@ -248,6 +250,7 @@ footer .wrap{padding-bottom:100px;font-size:12px}
 <p>신청서를 보내주시면 최문규 플래너가 직접 연락드립니다. 상담 후 가입 권유는 하지 않습니다.</p>
 <a class="tel serif" href="tel:01090716822">010-9071-6822</a>
 <span class="who">보험 플래너 최문규</span>
+<a class="btn btn-kakao" href="https://open.kakao.com/o/s4VfvSXi" target="_blank" rel="noopener" style="align-self:flex-start;margin-top:8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="#191919"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.9 5.3 4.7 6.7l-1 3.7c-.1.4.3.7.6.5l4.4-2.9c.4 0 .9.1 1.3.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>카카오톡 오픈채팅으로 상담하기</a>
 </div>
 <form id="f" novalidate>
 <div class="fld"><label for="n">이름</label><input id="n" type="text" placeholder="홍길동" autocomplete="name"></div>
@@ -257,6 +260,7 @@ footer .wrap{padding-bottom:100px;font-size:12px}
 <label class="agree"><input id="a" type="checkbox">개인정보(이름·연락처) 수집 및 상담 목적 이용에 동의합니다 (필수)</label>
 <p class="err" id="e" role="alert"></p>
 <button type="submit">상담 신청하기</button>
+<a class="btn btn-kakao" href="https://open.kakao.com/o/s4VfvSXi" target="_blank" rel="noopener" style="border-radius:4px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="#191919"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.9 5.3 4.7 6.7l-1 3.7c-.1.4.3.7.6.5l4.4-2.9c.4 0 .9.1 1.3.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>카카오톡으로 상담하기</a>
 <p class="hint">버튼을 누르면 문자 앱이 열리고 신청 내용이 최문규 플래너에게 전달됩니다</p>
 </form>
 </div></section>
@@ -269,8 +273,9 @@ footer .wrap{padding-bottom:100px;font-size:12px}
 </div></footer>
 
 <div class="mbar">
-<a class="t" href="tel:01090716822"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>전화 상담</a>
-<a class="c" href="#contact">무료 보험점검 신청</a>
+<a class="t" href="tel:01090716822" aria-label="전화 상담 010-9071-6822"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+<a class="k" href="https://open.kakao.com/o/s4VfvSXi" target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="#191919"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.9 5.3 4.7 6.7l-1 3.7c-.1.4.3.7.6.5l4.4-2.9c.4 0 .9.1 1.3.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>카톡 상담</a>
+<a class="c" href="#contact">무료 점검 신청</a>
 </div>
 
 <script>
